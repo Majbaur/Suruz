@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_background"
+    tools:context=".helperActivity.UserProfile">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImg"
+            android:layout_width="@dimen/_100mdp"
+            android:layout_height="@dimen/_100mdp"
+            android:layout_marginTop="@dimen/_30mdp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/changeProfileImage"
+            android:layout_width="@dimen/_30mdp"
+            android:layout_height="@dimen/_30mdp"
+            android:src="@drawable/image"
+            app:layout_constraintBottom_toBottomOf="@+id/profileImg"
+            app:layout_constraintEnd_toEndOf="@+id/profileImg" />
+
+        <TextView
+            android:id="@+id/titleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10mdp"
+            android:text="Name"
+            android:textColor="@color/colorBlue"
+            android:textSize="@dimen/_20font_mdp"
+            android:fontFamily="@font/ubuntu"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/profileImg"
+            app:layout_constraintStart_toStartOf="@id/profileImg"
+            app:layout_constraintTop_toBottomOf="@id/profileImg"/>
+
+        <TextView
+            android:id="@+id/titleUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="username"
+            android:padding="@dimen/_3mdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16font_mdp"
+            android:fontFamily="@font/ubuntu"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@id/titleName"
+            app:layout_constraintStart_toStartOf="@id/titleName"
+            app:layout_constraintTop_toBottomOf="@id/titleName"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout"
+            android:orientation="vertical"
+            android:padding="@dimen/_10mdp"
+            android:background="@drawable/white_box"
+            android:layout_marginStart="@dimen/_20mdp"
+            android:layout_marginEnd="@dimen/_20mdp"
+            android:layout_marginTop="@dimen/_18mdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleUsername">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_5mdp"
+                android:layout_marginLeft="@dimen/_8mdp"
+                android:layout_marginRight="@dimen/_8mdp"
+                android:layout_marginBottom="@dimen/_5mdp"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_12mdp">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:text="Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/lavender"
+                    android:textSize="@dimen/_14font_mdp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profileName"
+                    android:text="name"
+                    android:layout_weight="1"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_14font_mdp"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1mdp"
+                android:alpha="0.5"
+                android:background="@color/lavender"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_5mdp"
+                android:layout_marginLeft="@dimen/_8mdp"
+                android:layout_marginRight="@dimen/_8mdp"
+                android:layout_marginBottom="@dimen/_5mdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/email"
+                    android:text="Email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/lavender"
+                    android:textSize="@dimen/_14font_mdp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profileEmail"
+                    android:text="email"
+                    android:layout_weight="1"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_14font_mdp"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1mdp"
+                android:alpha="0.5"
+                android:background="@color/lavender"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_5mdp"
+                android:layout_marginLeft="@dimen/_8mdp"
+                android:layout_marginRight="@dimen/_8mdp"
+                android:layout_marginBottom="@dimen/_5mdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:text="Phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/lavender"
+                    android:textSize="@dimen/_14font_mdp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profilePhone"
+                    android:text="phone"
+                    android:layout_weight="1"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_14font_mdp"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1mdp"
+                android:alpha="0.5"
+                android:background="@color/lavender"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_5mdp"
+                android:layout_marginLeft="@dimen/_8mdp"
+                android:layout_marginRight="@dimen/_8mdp"
+                android:layout_marginBottom="@dimen/_5mdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dob"
+                    android:text="Birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/lavender"
+                    android:textSize="@dimen/_14font_mdp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profileBirthday"
+                    android:text="birthday"
+                    android:layout_weight="1"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_14font_mdp"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1mdp"
+                android:alpha="0.5"
+                android:background="@color/lavender"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_5mdp"
+                android:layout_marginLeft="@dimen/_8mdp"
+                android:layout_marginRight="@dimen/_8mdp"
+                android:layout_marginBottom="@dimen/_5mdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:text="Gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/lavender"
+                    android:textSize="@dimen/_14font_mdp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profileGender"
+                    android:text="gender"
+                    android:layout_weight="1"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_14font_mdp"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1mdp"
+                android:alpha="0.5"
+                android:background="@color/lavender"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_5mdp"
+                android:layout_marginLeft="@dimen/_8mdp"
+                android:layout_marginRight="@dimen/_8mdp"
+                android:layout_marginBottom="@dimen/_5mdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/addressTitle"
+                    android:text="Address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/lavender"
+                    android:textSize="@dimen/_14font_mdp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profileAddress"
+                    android:text="address"
+                    android:layout_weight="1"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_14font_mdp"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1mdp"
+                android:alpha="0.5"
+                android:background="@color/lavender"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_5mdp"
+                android:layout_marginLeft="@dimen/_8mdp"
+                android:layout_marginRight="@dimen/_8mdp"
+                android:layout_marginBottom="@dimen/_12mdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/password"
+                    android:text="Password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/lavender"
+                    android:textSize="@dimen/_14font_mdp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profilePassword"
+                    android:text="password"
+                    android:layout_weight="1"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_14font_mdp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_50mdp"
+            android:id="@+id/editButton"
+            android:textAlignment="center"
+            android:text="Edit Profile"
+            android:fontFamily="@font/bungee"
+            android:textSize="@dimen/_14font_mdp"
+            app:cornerRadius = "@dimen/_20mdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/linearLayout"
+            app:layout_constraintStart_toStartOf="@id/linearLayout"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

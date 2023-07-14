@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Suruz</string>
+    <string name="result">%1$s %2$f</string>
+
+</resources>
